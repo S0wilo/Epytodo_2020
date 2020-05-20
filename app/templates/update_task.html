@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Update task</title>
+    <link rel="stylesheet" type="text/css" href={{url_for('static', filename='css/add_task.css')}}> 
+    <link rel="shortcut icon" type="image/png" href="static/img/epitech.png"/>
+</head>
+<body>
+    <div id="task-box">
+      <div class="left-text-box">
+        <h1>Update task</h1>
+        <form method="POST">
+          <input type="text" name="id_task" placeholder="ID update task"/>
+          <input type="text" name="title" placeholder="Title"/>
+          <input type="text" name="begin" placeholder="Begin task YYYY-MM-DD hh:mm:ss"/>
+          <input type="text" name="end" placeholder="End task YYYY-MM-DD hh:mm:ss"/>
+          <input type="text" name="status" placeholder="Status"/>
+          <input type="submit" name="create" value="Modify task"/>
+         </form>
+      </div>
+</body>
+</html>

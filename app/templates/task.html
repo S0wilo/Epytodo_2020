@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Task</title>
+    <link rel="stylesheet" type="text/css" href={{url_for('static', filename='css/task.css')}}> 
+    <link rel="shortcut icon" type="image/png" href="static/img/epitech.png"/>
+</head>
+<body>
+  <p><a href="{{ url_for('route_user', username=username) }}">User profile</a></p>
+  <h1>Task</h1>
+  <br>
+  <br>
+  <table align="center">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Begin</th>
+            <th>End</th>
+            <th>Status  </th>
+        </tr>
+    </thead>
+    <tbody>
+      {% for item in tasks %}
+        <tr>
+            <td>{{ item[0] }}</td>
+            <td>{{ item[1] }}</td>
+            <td>{{ item[2] }}</td>
+            <td>{{ item[3] }}</td>
+            <td>{{ item[4] }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <br>
+  <br>
+  <input class="favorite styled" type="button"  value="Add Task" OnClick="window.location.href='{{ url_for('route_add_task', username=username) }}'">
+  <input class="favorite styled" type="button"  value="Delete Task" OnClick="window.location.href='{{ url_for('route_del_task', username=username) }}'">
+  <input class="favorite styled" type="button"  value="Modify Task" OnClick="window.location.href='{{ url_for('route_mod_task', username=username) }}'">
+  </body>
+</html>

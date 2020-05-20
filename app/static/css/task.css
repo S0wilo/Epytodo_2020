@@ -1,0 +1,54 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #efefef;
+    font-size: 16px;
+    color: #777;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+h1
+{
+    position: relative;
+    top: 10;
+    left: 930;
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+input[type="button"]
+{
+    position: relative;
+    left:600;
+    width: 120px;
+    height: 32px;
+    background: #f44336;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;   
+}
+
+
+table
+{
+	border-collapse: collapse
+}
+
+table, th, td
+{
+  border: 1px solid black;
+}
+
+thead
+{
+    background-color: #333;
+    color: #fff;
+}

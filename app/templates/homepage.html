@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Homepage</title>
+	<link rel="stylesheet" type="text/css" href={{url_for('static', filename='css/homepage.css')}}>
+	<link rel="shortcut icon" type="image/png" href="epitech.png"/>
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="logo">
+				<img src="{{url_for('static', filename='img/epitech.png')}}" alt="">
+			</div>
+			<ul class="nav-area">
+				<li><a href="#">Home</a></li>
+				<li><a href="{{ url_for('route_signin') }}">Sign in</a></li>
+				<li><a href="{{ url_for('route_register') }}">Register</a></li>
+			</ul>
+		</div>
+		<div class="welcome-text">
+			<h1>EpyTodo</h1>
+			<p>An Epitech Web Project</p>
+		</div>
+	</header>
+</body>
+</html>
